@@ -34,6 +34,7 @@ function RecipeCreate(props) {
                   name="name"
                   onChange={handleChange}
                   value={recipe.name}
+                  placeholder="Name"
                 />
               </label>
             </td>
@@ -45,6 +46,7 @@ function RecipeCreate(props) {
                   name="cuisine"
                   onChange={handleChange}
                   value={recipe.cuisine}
+                  placeholder="Cuisine"
                 />
               </label>
             </td>
@@ -56,6 +58,7 @@ function RecipeCreate(props) {
                   name="photo"
                   onChange={handleChange}
                   value={recipe.photo}
+                  placeholder="URL"
                 />
               </label>
             </td>
@@ -67,6 +70,7 @@ function RecipeCreate(props) {
                   name="ingredients"
                   onChange={handleChange}
                   value={recipe.ingredients}
+                  placeholder="Ingredients"
                 />
               </label>
             </td>
@@ -78,6 +82,7 @@ function RecipeCreate(props) {
                   name="preparation"
                   onChange={handleChange}
                   value={recipe.preparation}
+                  placeholder="Preparation"
                 />
               </label>
             </td>

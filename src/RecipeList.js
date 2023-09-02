@@ -1,11 +1,12 @@
 import React from "react";
 import RecipeView from "./RecipeView";
-
+import "./RecipeList.css"
+/*This component takes the array of recipes passed in 
+from App component and maps the row data from RecipeView into 
+a table with headings
+*/
 function RecipeList(props) {
   const {recipes, deleteRecipe} = props;
-  // TODO: Display the list of recipes using the structure of table that is provided.
-  // TODO: Create at least one additional component that is used by this component.
-  // TODO: Each recipe row must have a delete button - <button name="delete">Delete</button> - that deletes the post when clicked
 
   return (
     <div className="recipe-list">
@@ -21,9 +22,11 @@ function RecipeList(props) {
           </tr>
         </thead>
         <tbody>
-        {recipes.map((recipe, index) => (
+        {
+          //maps the recipe rows from RecipeView into a table
+        recipes.map((recipe, index) => (
           <RecipeView 
-          deleteRecipe={deleteRecipe}
+          deleteRecipe={()=> deleteRecipe(index)}
           key={index}
           recipe={recipe}
           />
