@@ -1,6 +1,5 @@
 import React from "react";
 import RecipeView from "./RecipeView";
-import "./RecipeList.css"
 /*This component takes the array of recipes passed in 
 from App component and maps the row data from RecipeView into 
 a table with headings

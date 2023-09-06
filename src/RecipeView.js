@@ -1,5 +1,4 @@
 import React from "react";
-import "./RecipeView.css"
 
 /*This components responsibility is to take the recipe data
 passed in from RecipeList and return a row with said data
@@ -13,8 +12,8 @@ function RecipeView(props) {
         <td>{recipe.name}</td>
         <td>{recipe.cuisine}</td>
         <td><img src={recipe.photo}/></td>
-        <td className="content_td"><p>{recipe.ingredients}</p></td>
-        <td className="content_td"><p>{recipe.preparation}</p></td>
+        <td className="content_td bigcol"><p>{recipe.ingredients}</p></td>
+        <td className="content_td bigcol"><p>{recipe.preparation}</p></td>
         <td> 
          <button name="delete" onClick={deleteRecipe}>Delete</button>
         </td>

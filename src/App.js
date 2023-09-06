@@ -7,6 +7,7 @@ import RecipeData from "./RecipeData";
 function App() {
   
   const [recipes, setRecipes] = useState(RecipeData);
+  document.title = "Recipe App"
   /*createRecipe function adds a new recipe from the 
   RecipeCreate component and adds it to the current recipes array */
   const createRecipe = (newRecipe) => {
@@ -15,6 +16,7 @@ function App() {
 
   /*deleteRecipe passes an index in from the map function 
   in the RecipeList component, and deletes that recipe */
+
   const deleteRecipe = (indexToDelete) => {
     setRecipes((currentRecipes) =>
     //filtering the array of recipes and returning all but deleted recipe

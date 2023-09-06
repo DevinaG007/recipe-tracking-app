@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC");
 
 .App {
   padding: 1em;
 }
 
 h1 {
-  font-family: 'Playfair Display SC';
+  font-family: "Playfair Display SC";
   font-size: 64px;
   text-align: center;
 }
@@ -22,7 +22,7 @@ header {
 /* typography */
 
 html {
-  font-family: 'helvetica neue', sans-serif;
+  font-family: "helvetica neue", sans-serif;
 }
 
 img {
@@ -31,8 +31,9 @@ img {
   height: 100%;
 }
 
-thead th, tfoot th {
-  font-family: 'Rock Salt';
+thead th,
+tfoot th {
+  font-family: "Rock Salt";
 }
 
 th {
@@ -42,14 +43,14 @@ th {
 
 td {
   letter-spacing: 1px;
-  overflow-x:hidden;
-  overflow-y:hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   font-size: 12px;
   padding: 10px;
   text-align: center;
 }
 
-tbody:nth-child(odd) {
+tbody tr:nth-child(odd) {
   background-color: #fff0c7;
 }
 
@@ -59,7 +60,7 @@ table {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
-  overflow:hidden;
+  overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -70,21 +71,20 @@ table {
   text-overflow: ellipsis;
 }
 
-
-
 /* Column Size for thead */
-thead:nth-child(-n + 3), thead:last-child {
-width: 10%;
-}
 
-thead:nth-child(n + 4):nth-child(-n + 5){
-  width: 30%;
-}
-
-/* Column size for tbody */
-tbody:nth-child(-n +3), tbody:last-child {
+td:nth-child(-n + 3), td:last-child, th:nth-child(-n + 3), th:last-child {
   width: 10%;
 }
-tbody:nth-child(n + 4):nth-child(-n + 5) {
-width: 30%;
+
+td:nth-child(4), td:nth-child(5) {
+  max-width: 30%;
 }
+
+input {
+  width: 100%;
+}
+.fit {
+  padding-right: 100px;
+}
+
